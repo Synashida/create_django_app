@@ -1,0 +1,18 @@
+# このファイルはdjangoのルートディレクトリ直下にbridge_data/binに配置されることを
+# 前提に作成されているため、ファイルの移動が発生した場合はパスを適宜変更する必要があります。
+# このファイルの2つ上をHOMEとして取得する
+
+# Homeディレクトリパス格納変数
+HOME=$(dirname $(dirname $(cd $(dirname $0); pwd)))
+
+# binディレクトリパス
+BINDIR=$HOME/bridge_data/bin
+
+# runディレクトリパス
+RUNDIR=$HOME/bridge_data/run
+
+# uwsgiのpidファイルパス
+WSGIPID=$RUNDIR/wsgi.pid
+
+# uwsgiの設定ファイルパス
+WSGI_INI=bridge_data/conf/uwsgi/uwsgi.ini
