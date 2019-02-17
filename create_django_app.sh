@@ -122,7 +122,7 @@ sed -i -e "s/___port___/${use_port}/g" $out_file
 
 # nginxの設定ファイル
 echo "nginxファイルの作成 ${replace_var} ${source_nginx}"
-out_file="bridge_data/conf/nginx/${project_name}.ini"
+out_file="bridge_data/conf/nginx/${project_name}.conf"
 cat ${source_nginx} | sed $replace_var > $out_file
 sed -i -e "s/___port___/${use_port}/g" $out_file
 sed -i -e "s/___server_name___/${domain_name}/g" $out_file
