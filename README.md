@@ -1,0 +1,2 @@
+# create_django_app
+uwsgiとnginxを使って動作させることを前提としたdjangoのアプリケーションの生成スクリプト
